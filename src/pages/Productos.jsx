@@ -153,7 +153,7 @@ export default function Productos() {
         </div>
       </div>
 
-      <ProductoForm open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
+      <ProductoForm key={editing ? editing.id : 'new'} open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
 
       <ConfirmDialog
         open={!!confirmDel}

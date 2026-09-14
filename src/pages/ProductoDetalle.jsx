@@ -83,7 +83,7 @@ export default function ProductoDetalle() {
         entity={{ kind: 'producto', id: producto.id, archivos: producto.archivos, seguimientos: producto.seguimientos }}
       />
 
-      <ProductoForm open={formOpen} onClose={() => setFormOpen(false)} editing={producto} />
+      <ProductoForm key={producto.id} open={formOpen} onClose={() => setFormOpen(false)} editing={producto} />
 
       <ConfirmDialog
         open={confirmDel}

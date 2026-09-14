@@ -136,7 +136,7 @@ export default function Clientes() {
         </div>
       </div>
 
-      <ClienteForm open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
+      <ClienteForm key={editing ? editing.id : 'new'} open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
 
       <ConfirmDialog
         open={!!confirmDel}

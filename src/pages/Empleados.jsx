@@ -44,7 +44,7 @@ export function EmpleadoForm({ open, onClose, editing }) {
           <div className="fld full"><label>Nombre completo</label><input value={form.nombre} onChange={set('nombre')} required /></div>
           <div className="fld"><label>Puesto</label><input value={form.puesto} onChange={set('puesto')} placeholder="Ej. Ejecutivo de Cuentas" required /></div>
           <div className="fld"><label>Departamento</label><select value={form.departamento} onChange={set('departamento')}>{DEPARTAMENTOS.map((d) => <option key={d}>{d}</option>)}</select></div>
-          <div className="fld"><label>Correo</label><input type="email" value={form.email} onChange={set('email')} placeholder="nombre@vertex.mx" /></div>
+          <div className="fld"><label>Correo</label><input type="email" value={form.email} onChange={set('email')} placeholder="nombre@zadesarrollo.mx" /></div>
           <div className="fld"><label>Teléfono</label><input value={form.telefono} onChange={set('telefono')} placeholder="55 0000 0000" /></div>
           <div className="fld"><label>Ciudad</label><input value={form.ciudad} onChange={set('ciudad')} /></div>
           <div className="fld"><label>Estado</label><select value={form.estado} onChange={set('estado')}><option>Activo</option><option>Baja</option></select></div>
@@ -149,7 +149,7 @@ export default function Empleados() {
         </div>
       </div>
 
-      <EmpleadoForm open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
+      <EmpleadoForm key={editing ? editing.id : 'new'} open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
 
       <ConfirmDialog
         open={!!confirmDel}

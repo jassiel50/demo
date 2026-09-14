@@ -53,7 +53,7 @@ export default function EmpleadoDetalle() {
         entity={{ kind: 'empleado', id: empleado.id, archivos: empleado.archivos, seguimientos: empleado.seguimientos }}
       />
 
-      <EmpleadoForm open={formOpen} onClose={() => setFormOpen(false)} editing={empleado} />
+      <EmpleadoForm key={empleado.id} open={formOpen} onClose={() => setFormOpen(false)} editing={empleado} />
 
       <ConfirmDialog
         open={confirmDel}

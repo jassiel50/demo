@@ -18,7 +18,7 @@ const TITLES = [
 
 function pageTitle(pathname) {
   const hit = TITLES.find((t) => t.match.test(pathname));
-  return hit ? hit.title : 'Vertex ERP';
+  return hit ? hit.title : 'ZA Desarrollo';
 }
 
 export default function Layout() {
@@ -48,9 +48,9 @@ export default function Layout() {
 
       <aside className={'sidebar' + (open ? ' open' : '')}>
         <div className="sb-brand">
-          <div className="brand-mark-icon"><span className="material-symbols-outlined">hub</span></div>
+          <div className="brand-mark-icon"><span className="brand-mark-monogram">ZA</span></div>
           <div className="brand-mark-text">
-            <span className="brand-wordmark">VERTEX</span>
+            <span className="brand-wordmark">ZA DESARROLLO</span>
             <span className="brand-tagline-mini">ERP Suite</span>
           </div>
         </div>

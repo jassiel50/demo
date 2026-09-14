@@ -1,4 +1,4 @@
-# Vertex ERP — Demo
+# ZA Desarrollo — Demo ERP
 
 Demo interactivo de un ERP (productos, inventarios, clientes, ventas y empleados) pensado para mostrarse a clientes potenciales. Construido con **React + Vite** (componentes, rutas con `react-router-dom`, páginas de detalle navegables), sin backend ni base de datos: todos los datos viven en memoria del navegador y se reinician al recargar la página.
 

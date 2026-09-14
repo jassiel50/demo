@@ -68,7 +68,7 @@ export default function VentaDetalle() {
         entity={{ kind: 'venta', id: venta.id, archivos: venta.archivos, seguimientos: venta.seguimientos }}
       />
 
-      <VentaForm open={formOpen} onClose={() => setFormOpen(false)} editing={venta} />
+      <VentaForm key={venta.id} open={formOpen} onClose={() => setFormOpen(false)} editing={venta} />
 
       <ConfirmDialog
         open={confirmDel}

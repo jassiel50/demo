@@ -28,9 +28,9 @@ export default function Login() {
       <div className="login-card">
         <div className="login-brand">
           <div className="brand-mark">
-            <div className="brand-mark-icon"><span className="material-symbols-outlined">hub</span></div>
+            <div className="brand-mark-icon"><span className="brand-mark-monogram">ZA</span></div>
             <div className="brand-mark-text">
-              <span className="brand-wordmark">VERTEX</span>
+              <span className="brand-wordmark">ZA DESARROLLO</span>
               <span className="brand-tagline-mini">ERP Suite</span>
             </div>
           </div>
@@ -52,10 +52,10 @@ export default function Login() {
             <div className="login-mobile-mark">
               <div className="brand-mark">
                 <div className="brand-mark-icon" style={{ background: 'linear-gradient(135deg,var(--navy),var(--navy-2))' }}>
-                  <span className="material-symbols-outlined" style={{ color: '#fff' }}>hub</span>
+                  <span className="brand-mark-monogram" style={{ color: '#fff' }}>ZA</span>
                 </div>
                 <div className="brand-mark-text">
-                  <span className="brand-wordmark" style={{ color: 'var(--navy)' }}>VERTEX</span>
+                  <span className="brand-wordmark" style={{ color: 'var(--navy)' }}>ZA DESARROLLO</span>
                   <span className="brand-tagline-mini" style={{ color: 'var(--text-faint)' }}>ERP Suite</span>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function Login() {
                 <label htmlFor="loginUser">Usuario</label>
                 <div className="input-wrap">
                   <span className="material-symbols-outlined">person</span>
-                  <input id="loginUser" type="text" placeholder="demo@vertex.com" required autoComplete="username" value={user} onChange={(e) => setUser(e.target.value)} />
+                  <input id="loginUser" type="text" placeholder="demo@zadesarrollo.mx" required autoComplete="username" value={user} onChange={(e) => setUser(e.target.value)} />
                 </div>
               </div>
 

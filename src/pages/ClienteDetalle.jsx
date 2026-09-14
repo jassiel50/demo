@@ -76,7 +76,7 @@ export default function ClienteDetalle() {
         entity={{ kind: 'cliente', id: cliente.id, archivos: cliente.archivos, seguimientos: cliente.seguimientos }}
       />
 
-      <ClienteForm open={formOpen} onClose={() => setFormOpen(false)} editing={cliente} />
+      <ClienteForm key={cliente.id} open={formOpen} onClose={() => setFormOpen(false)} editing={cliente} />
 
       <ConfirmDialog
         open={confirmDel}

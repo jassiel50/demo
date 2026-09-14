@@ -19,19 +19,6 @@ export function VentaForm({ open, onClose, editing }) {
       : productos.length ? [blankLine(productos[0].id)] : []
   );
 
-  // re-seed local state whenever the modal is (re)opened for a different record
-  const [lastEditingId, setLastEditingId] = useState(editing?.id ?? null);
-  if (open && editing?.id !== lastEditingId) {
-    setLastEditingId(editing?.id ?? null);
-    setClienteId(editing?.clienteId || clientes[0]?.id || '');
-    setEstado(editing?.estado || 'Pendiente');
-    setLines(
-      editing?.items?.length
-        ? editing.items.map((it) => ({ ...blankLine(it.productoId), cantidad: it.cantidad }))
-        : productos.length ? [blankLine(productos[0].id)] : []
-    );
-  }
-
   const updateLine = (key, patch) => setLines((prev) => prev.map((l) => (l.key === key ? { ...l, ...patch } : l)));
   const removeLine = (key) => setLines((prev) => prev.filter((l) => l.key !== key));
   const addLine = () => setLines((prev) => [...prev, blankLine(productos[0]?.id)]);
@@ -205,7 +192,7 @@ export default function Ventas() {
         </div>
       </div>
 
-      <VentaForm open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
+      <VentaForm key={editing ? editing.id : 'new'} open={formOpen} onClose={() => setFormOpen(false)} editing={editing} />
 
       <ConfirmDialog
         open={!!confirmDel}

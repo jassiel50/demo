@@ -115,14 +115,14 @@ const seedVentas = ventaPlantillas.map((t, idx) => {
 });
 
 const seedEmpleados = [
-  { id: 1, nombre: 'Daniela Ortiz', puesto: 'Gerente de Ventas', departamento: 'Comercial', email: 'daniela.ortiz@vertex.mx', telefono: '55 1122 3344', fechaIngreso: isoDate(daysAgo(920)), estado: 'Activo', salario: 38000, ciudad: 'Ciudad de México', archivos: [], seguimientos: [] },
-  { id: 2, nombre: 'Roberto Salinas', puesto: 'Ejecutivo de Cuentas', departamento: 'Comercial', email: 'roberto.salinas@vertex.mx', telefono: '81 2233 4455', fechaIngreso: isoDate(daysAgo(640)), estado: 'Activo', salario: 22000, ciudad: 'Monterrey', archivos: [], seguimientos: [
+  { id: 1, nombre: 'Daniela Ortiz', puesto: 'Gerente de Ventas', departamento: 'Comercial', email: 'daniela.ortiz@zadesarrollo.mx', telefono: '55 1122 3344', fechaIngreso: isoDate(daysAgo(920)), estado: 'Activo', salario: 38000, ciudad: 'Ciudad de México', archivos: [], seguimientos: [] },
+  { id: 2, nombre: 'Roberto Salinas', puesto: 'Ejecutivo de Cuentas', departamento: 'Comercial', email: 'roberto.salinas@zadesarrollo.mx', telefono: '81 2233 4455', fechaIngreso: isoDate(daysAgo(640)), estado: 'Activo', salario: 22000, ciudad: 'Monterrey', archivos: [], seguimientos: [
     { id: 1, fecha: isoDateTime(daysAgo(6)), autor: 'Daniela Ortiz', nota: 'Evaluación trimestral: superó la meta de ventas en 12%.' },
   ] },
-  { id: 3, nombre: 'Karla Jiménez', puesto: 'Analista de Inventarios', departamento: 'Operaciones', email: 'karla.jimenez@vertex.mx', telefono: '33 4455 6677', fechaIngreso: isoDate(daysAgo(510)), estado: 'Activo', salario: 19500, ciudad: 'Guadalajara', archivos: [], seguimientos: [] },
-  { id: 4, nombre: 'Emilio Torres', puesto: 'Soporte Técnico', departamento: 'Operaciones', email: 'emilio.torres@vertex.mx', telefono: '55 5566 7788', fechaIngreso: isoDate(daysAgo(380)), estado: 'Activo', salario: 16800, ciudad: 'Ciudad de México', archivos: [], seguimientos: [] },
-  { id: 5, nombre: 'Paola Guzmán', puesto: 'Contadora', departamento: 'Finanzas', email: 'paola.guzman@vertex.mx', telefono: '81 6677 8899', fechaIngreso: isoDate(daysAgo(700)), estado: 'Activo', salario: 26000, ciudad: 'Monterrey', archivos: [], seguimientos: [] },
-  { id: 6, nombre: 'Hugo Fuentes', puesto: 'Almacenista', departamento: 'Operaciones', email: 'hugo.fuentes@vertex.mx', telefono: '33 7788 9900', fechaIngreso: isoDate(daysAgo(210)), estado: 'Baja', salario: 14500, ciudad: 'Guadalajara', archivos: [], seguimientos: [
+  { id: 3, nombre: 'Karla Jiménez', puesto: 'Analista de Inventarios', departamento: 'Operaciones', email: 'karla.jimenez@zadesarrollo.mx', telefono: '33 4455 6677', fechaIngreso: isoDate(daysAgo(510)), estado: 'Activo', salario: 19500, ciudad: 'Guadalajara', archivos: [], seguimientos: [] },
+  { id: 4, nombre: 'Emilio Torres', puesto: 'Soporte Técnico', departamento: 'Operaciones', email: 'emilio.torres@zadesarrollo.mx', telefono: '55 5566 7788', fechaIngreso: isoDate(daysAgo(380)), estado: 'Activo', salario: 16800, ciudad: 'Ciudad de México', archivos: [], seguimientos: [] },
+  { id: 5, nombre: 'Paola Guzmán', puesto: 'Contadora', departamento: 'Finanzas', email: 'paola.guzman@zadesarrollo.mx', telefono: '81 6677 8899', fechaIngreso: isoDate(daysAgo(700)), estado: 'Activo', salario: 26000, ciudad: 'Monterrey', archivos: [], seguimientos: [] },
+  { id: 6, nombre: 'Hugo Fuentes', puesto: 'Almacenista', departamento: 'Operaciones', email: 'hugo.fuentes@zadesarrollo.mx', telefono: '33 7788 9900', fechaIngreso: isoDate(daysAgo(210)), estado: 'Baja', salario: 14500, ciudad: 'Guadalajara', archivos: [], seguimientos: [
     { id: 1, fecha: isoDateTime(daysAgo(15)), autor: 'Daniela Ortiz', nota: 'Baja voluntaria, último día de labores confirmado.' },
   ] },
 ];
