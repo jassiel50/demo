@@ -124,6 +124,7 @@ export default function Clientes() {
                   <td>{c.ciudad}</td>
                   <td onClick={(e) => e.stopPropagation()}>
                     <div className="row-actions">
+                      <button type="button" className="action-btn view" title="Ver detalle" onClick={() => navigate(`/clientes/${c.id}`)}><span className="material-symbols-outlined">visibility</span></button>
                       <button type="button" className="action-btn edit" title="Editar" onClick={() => openEdit(c)}><span className="material-symbols-outlined">edit</span></button>
                       <button type="button" className="action-btn del" title="Eliminar" onClick={() => setConfirmDel(c)}><span className="material-symbols-outlined">delete</span></button>
                     </div>

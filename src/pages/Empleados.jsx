@@ -137,6 +137,7 @@ export default function Empleados() {
                   <td><Chip tone={e.estado === 'Activo' ? 'green' : 'red'}>{e.estado}</Chip></td>
                   <td onClick={(ev) => ev.stopPropagation()}>
                     <div className="row-actions">
+                      <button type="button" className="action-btn view" title="Ver detalle" onClick={() => navigate(`/empleados/${e.id}`)}><span className="material-symbols-outlined">visibility</span></button>
                       <button type="button" className="action-btn edit" title="Editar" onClick={() => openEdit(e)}><span className="material-symbols-outlined">edit</span></button>
                       <button type="button" className="action-btn del" title="Eliminar" onClick={() => setConfirmDel(e)}><span className="material-symbols-outlined">delete</span></button>
                     </div>

@@ -131,10 +131,10 @@ export default function Inventarios() {
 
         <div className="table-scroll">
           <table className="data-table">
-            <thead><tr><th>Producto</th><th>Tipo</th><th>Cantidad</th><th>Motivo</th><th>Responsable</th><th>Fecha</th></tr></thead>
+            <thead><tr><th>Producto</th><th>Tipo</th><th>Cantidad</th><th>Motivo</th><th>Responsable</th><th>Fecha</th><th style={{ textAlign: 'right' }}>Acciones</th></tr></thead>
             <tbody>
               {list.length === 0 ? (
-                <tr><td colSpan={6}><EmptyState icon="swap_vert" message="No se encontraron movimientos con esos filtros." /></td></tr>
+                <tr><td colSpan={7}><EmptyState icon="swap_vert" message="No se encontraron movimientos con esos filtros." /></td></tr>
               ) : list.map((m) => {
                 const p = getProducto(m.productoId);
                 return (
@@ -145,6 +145,13 @@ export default function Inventarios() {
                     <td className="entity-sub">{m.motivo}</td>
                     <td className="entity-sub">{m.responsable}</td>
                     <td className="entity-sub">{fmtDate(m.fecha)}</td>
+                    <td onClick={(e) => e.stopPropagation()}>
+                      <div className="row-actions">
+                        <button type="button" className="action-btn view" title="Ver producto" onClick={() => p && navigate(`/productos/${p.id}`)} disabled={!p}>
+                          <span className="material-symbols-outlined">visibility</span>
+                        </button>
+                      </div>
+                    </td>
                   </tr>
                 );
               })}

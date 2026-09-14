@@ -140,6 +140,7 @@ export default function Productos() {
                     <td><Chip tone={est.chip.replace('chip-', '')}>{est.label}</Chip></td>
                     <td onClick={(e) => e.stopPropagation()}>
                       <div className="row-actions">
+                        <button type="button" className="action-btn view" title="Ver detalle" onClick={() => navigate(`/productos/${p.id}`)}><span className="material-symbols-outlined">visibility</span></button>
                         <button type="button" className="action-btn edit" title="Editar" onClick={() => openEdit(p)}><span className="material-symbols-outlined">edit</span></button>
                         <button type="button" className="action-btn del" title="Eliminar" onClick={() => setConfirmDel(p)}><span className="material-symbols-outlined">delete</span></button>
                       </div>
